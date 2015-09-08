@@ -9,6 +9,6 @@ data2 <- data1[!names(data1) %in% c("Date","Time")]
 
 ## PLOT 1
 hist(data2$Global_active_power,main="Global Active Power",
-     col="red",xlab="Global Active Power (kilowatts)")
+     col="red",xlab="Global Active Power (kilowatts)",cex=0.8)
 dev.copy(png,"plot1.png", width = 480, height = 480)
 dev.off()

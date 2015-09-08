@@ -45,7 +45,7 @@ legend(x="topright",
 plot(data2$DateTime,
      data2$Global_reactive_power,
      col="black",
-     ylab="Global Reactive Power",
+     ylab="Global_Reactive_Power",
      xlab="datetime",
      type="l")
 

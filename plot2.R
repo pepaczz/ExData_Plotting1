@@ -8,7 +8,7 @@ data1["DateTime"] <- as.POSIXct(paste(data1$Date, data1$Time), format="%d/%m/%Y 
 data2 <- data1[!names(data1) %in% c("Date","Time")]
 
 ## PLOT 2
-# Sys.setlocale("LC_TIME", "C")   #-- used to force english language locale 
+Sys.setlocale("LC_TIME", "C")   #-- used to force english language locale 
 plot(data2$DateTime,
      data2$Global_active_power,
      col="black",
